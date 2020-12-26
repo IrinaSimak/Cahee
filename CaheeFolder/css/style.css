@@ -219,3 +219,138 @@ body {
 }
 
 /* Header style end */
+
+/* Content style start */
+
+.section__contacts {
+  padding: 100px 0 120px;
+  background: url(../images/contact-bg.png) no-repeat center/cover;
+}
+
+.section__title--dark {
+  font-size: 90px;
+  color: #262626;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-align: center;
+
+}
+
+.section__subtitle--dark {
+  line-height: 1.47;
+  font-size: 17px;
+  margin-bottom: 47px;
+  max-width: 350px;
+  margin: 0 auto 47px;
+  text-align: center;
+}
+
+
+.section__form--style {
+  width: 500px;
+  height: 50px;
+  margin: 15px 170px 15px 0;
+  padding: 15px 378px 0 15px;
+  background-color: #00c4c4;
+  opacity: 0.5;
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.section__form--stylebig {
+  height: 150px;
+  margin: 15px 170px 15px 0;
+  padding: 20px 383px 216px 20px;
+  overflow: hidden;
+
+}
+
+.contacts__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: -250px;
+  margin-left: 100px;
+}
+
+.contacts__title--style {
+  font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #262626;
+  color: #b9b9b9;
+  padding-top: 13px;
+  padding-left: 200px;
+  padding-right: 180px;
+}
+
+.footer__style--logo {
+  padding-bottom: 20px;
+}
+
+.colortext {
+  color: #ff2b58;
+}
+
+/* Content style end */
+
+
+/* Services style start*/
+
+.section__services {
+  background-color: #70bfff;
+  height: 790px;
+  padding: 100px 164px 151px 265px;
+}
+
+.section__button {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 100px;
+}
+
+.section__title--services {
+  background: url(../images/tomato.png) no-repeat;
+  width: 600px;
+  height: 527px;
+  margin: -20px 1px 12px 100px;
+  padding-top: 220px;
+}
+
+.section__button--style {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.5);
+  margin: 10px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.section__button--icon {
+  width: 90px;
+  margin-top: -10px;
+  font-size: xxx-large;
+  margin-left: 90px;
+  background-color: #ffffff;
+ }
+  .section__button--name {
+    width: 231px;
+    margin-left: 90px;
+    margin-top: 18px;
+}
+  .section__button--border {
+    border-left-color:#9d9d9d;
+    border-bottom: #ffffff;
+    border-top: #ffffff;
+    border-right: #ffffff;
+}
+/* Services style end */

@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700;900&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/icon.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -25,10 +26,10 @@
             <nav class="nav">
               <a href="#" class="nav__link">HOME</a>
               <a href="#about" class="nav__link">ABOUT</a>
-              <a href="#" class="nav__link">SERVICES</a>
+              <a href="#services" class="nav__link">SERVICES</a>
               <a href="#" class="nav__link">GALLERY</a>
               <a href="#blog" class="nav__link">BLOG</a>
-              <a href="#" class="nav__link">CONTACT</a>
+              <a href="#contact" class="nav__link">CONTACT</a>
             </nav>
           </div>
         </div>
@@ -69,7 +70,46 @@
         </div>
       </div>
     </section>
-    <section class="section section--blog">
+    <section class="section section__services" id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="section__button">
+              <div class="section__button section__button--style">
+                <p class="section__button--name">Online Shopping </p>
+                <button class="section__button--icon section__button--border">
+                  <div class="icon-icon"></div>
+                </button>
+              </div>
+              <div class="section__button section__button--style">
+                <p class="section__button--name">Quality Product </p>
+                <button class="section__button--icon section__button--border">
+                  <div class="icon-icon-1"></div>
+                </button>
+              </div>
+              <div class="section__button section__button--style">
+                <p class="section__button--name">Domestic & International Delivery</p>
+                <button class="section__button--icon section__button--border">
+                  <div class="icon-icon-2"></div>
+                </button>
+              </div>
+              <div class="section__button section__button--style">
+                <p class="section__button--name">Well Organized</p>
+                <button class="section__button--icon section__button--border">
+                  <div class="icon-icon-4"></div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="section__title section__title--secondary section__title--services ">
+              Our Services
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--blog" id="blog">
       <div class="container">
         <h2 class="section__title section__title--blog">Blog</h2>
         <p class="section__subtitle section__subtitile--light">Dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -113,6 +153,41 @@
       </div>
       <button class="button button--blog">VIEW MORE</button>
     </section>
+    <section class="section section__contacts" id="contact">
+      <div class="container">
+        <h2 class="section__title section__title--dark">Contact</h2>
+        <p class="section__subtitle section__subtitle--dark">For new projects, ideas, business or anything
+          you'd like to discuss, contact with me!</p>
+        <div class="row align-items-center">
+          <div class="col-6">
+            <div class="section section__form">
+              <form id="text" action="" method="POST">
+                <textarea name="name" form="text" wrap="off" class="section__form--style">Name</textarea>
+                <textarea name="email" form="text" wrap="off" class="section__form--style">Your email</textarea>
+                <textarea name="phone" form="text" wrap="off" class="section__form--style">Your phone number</textarea>
+                <textarea name="massage" form="text" wrap="off"
+                  class="section__form--style section__form--stylebig">Your massage</textarea>
+              </form>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="contacts contacts__title">
+              <h6 class="contacts contacts__title--style">ADDRESS</h6>
+              <p>123 City name, Street, City, Country</p>
+              <h6 class="title__contacts">EMAIL</h6>
+              <p>cahee@domain.com</p>
+              <h6 class="title__contacts">PHONE</h6>
+              <p>+012 345 6789</p>
+            </div>
+          </div>
+    </section>
+    <footer div class="footer">
+      <p> © 2015 Company. All right reserved. </p>
+      <img src="images/logo-small.png" alt="logo" class="footer footer__style--logo">
+      <p>Made with <span class="colortext">love</span> by Auskteez</p>
+    </footer>
+    </div>
+    </div>
   </main>
 </body>
 
