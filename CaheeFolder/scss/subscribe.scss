@@ -1,9 +1,8 @@
 .section {
   &--subscribe {
     background: url("../images/subscribe.png") no-repeat;
-    padding: 98px 50px 161px 115px;
-    margin-left: 90px;
-
+    padding: 170px 0px 197px 0px;
+    background-size: cover;
   }
 }
 
@@ -17,13 +16,13 @@
 }
 
 .subtitle {
-  width: 550px;
+  width: 50%;
 
 }
 
 .subscribe {
   &__form {
-    width: 500px;
+    width: 50%;
     height: 50px;
     margin: 15px 60px 15px 0;
     padding: 0px 233px -1px 15px;
