@@ -9,8 +9,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700;900&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/7c001e47a1.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/icon.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/subscribe.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/style1.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -27,15 +31,34 @@
               <a href="#" class="nav__link">HOME</a>
               <a href="#about" class="nav__link">ABOUT</a>
               <a href="#services" class="nav__link">SERVICES</a>
-              <a href="#" class="nav__link">GALLERY</a>
+              <a href="#gallery" class="nav__link">GALLERY</a>
               <a href="#blog" class="nav__link">BLOG</a>
               <a href="#contact" class="nav__link">CONTACT</a>
             </nav>
+            <!--Mobile menu start-->
+            <div class="menu-icon" onclick="openNav()">
+              <i class="fas fa-bars"></i>
+            </div>
+            <div id="myNav" class="overlay">
+              <!-- Button to close the overlay navigation -->
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+              <!-- Overlay content -->
+              <div class="overlay-content">
+                <a href="#" class="nav__link">HOME</a>
+                <a href="#about" class="nav__link">ABOUT</a>
+                <a href="#services" class="nav__link">SERVICES</a>
+                <a href="#gallery" class="nav__link">GALLERY</a>
+                <a href="#blog" class="nav__link">BLOG</a>
+                <a href="#contact" class="nav__link">CONTACT</a>
+              </div>
+            </div>
+            <!--mobile menu end-->
           </div>
         </div>
         <div class="section__content">
           <div class="row">
-            <div class="col-4">
+            <div class="col-md-6 col-lg-4 col-12">
               <h1 class="section__title section__title--primary">Fresh Life</h1>
               <p class="section__description section__description--dark">Sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad
@@ -53,10 +76,10 @@
     <section class="section section--about" id="about">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-6">
-            <img src="images/img.png" alt="fruits">
+          <div class="col-12 col-md-6">
+            <img src="images/img.png" alt="fruits" class="img-fluid">
           </div>
-          <div class="col-6">
+          <div class="col-12 col-md-6">
             <h2 class="section__title section__title--secondary">About Us</h2>
             <p class="section__description section__description--light">
               Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -73,38 +96,97 @@
     <section class="section section__services" id="services">
       <div class="container">
         <div class="row">
-          <div class="col-6">
-            <div class="section__button">
-              <div class="section__button section__button--style">
-                <p class="section__button--name">Online Shopping </p>
-                <button class="section__button--icon section__button--border">
+          <div class="col-12 col-md-6">
+            <table class="section__table">
+              <tr>
+                <th class="table__style">
+                  Online Shopping</th>
+                <th class="table__style--icon">
                   <div class="icon-icon"></div>
-                </button>
-              </div>
-              <div class="section__button section__button--style">
-                <p class="section__button--name">Quality Product </p>
-                <button class="section__button--icon section__button--border">
+                </th>
+              </tr>
+              <tr>
+                <th class="table__style">
+                  Quality Product </th>
+                <th class="table__style--icon">
                   <div class="icon-icon-1"></div>
-                </button>
-              </div>
-              <div class="section__button section__button--style">
-                <p class="section__button--name">Domestic & International Delivery</p>
-                <button class="section__button--icon section__button--border">
+                </th>
+              </tr>
+              <tr>
+                <th class="table__style">
+                  Domestic & International Delivery</th>
+                <th class="table__style--icon">
                   <div class="icon-icon-2"></div>
-                </button>
-              </div>
-              <div class="section__button section__button--style">
-                <p class="section__button--name">Well Organized</p>
-                <button class="section__button--icon section__button--border">
+                </th>
+              </tr>
+              <tr>
+                <th class="table__style">
+                  Well Organized</th>
+                <th class="table__style--icon">
                   <div class="icon-icon-4"></div>
-                </button>
+                </th>
+              </tr>
+            </table>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="section__title section__title--secondary section__title--services ">
+              <p>Our Services</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="section section--gallery" id="gallery">
+      <div class="container">
+        <h2 class="section__title section__title--dark">Gallery</h2>
+        <p class="section__title section__subtitle--dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+          ullam alias nobis neque sint, iure placeat facilis consectetur provident.</p>
+        <div class="gallery__list">
+          <div class="row">
+            <div class="col-12 col-md-8">
+              <div class="gallery__item">
+                <img src="images/gal-1.png" alt="">
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="gallery__item">
+                <img src="images/gal-2.png" alt="">
+              </div>
+              <div class="gallery__item">
+                <img src="images/gal-3.png" alt="">
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="gallery__item">
+                <img src="images/gal-4.png" alt="">
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="gallery__item">
+                <img src="images/gal-5.png" alt="">
               </div>
             </div>
           </div>
-          <div class="col-6">
-            <div class="section__title section__title--secondary section__title--services ">
-              Our Services
-            </div>
+          <section>
+            <button class="button button--style">VIEW MORE</button>
+          </section>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="section section--subscribe ">
+      <div class="container">
+        <div class="row">
+          <div class=col-12>
+            <h3 class="title title--dark">Subscribe To Us</h3>
+            <p class="subtitle subtitle--dark ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, nisi?
+              Quae
+              esse soluta sint omnis asperiores saepe perspiciatis quod facilis.</p>
+            <form>
+              <p><input type="text" class="subscribe__form" value="Your email address..." name="email">
+                <button class="subscribe__button">SUBSCRIBE</button></p>
+            </form>
           </div>
         </div>
       </div>
@@ -116,7 +198,7 @@
           nostrud exercitation ullamco laboris nisi
           ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
         <div class="row align-items-center">
-          <div class="col-4">
+          <div class="col-12 col-md-4 mb-4">
             <a href="#" class="link">
               <img src="images/blog-1.png" alt="blog 1">
               <div class="section__date section__date--background">20<br> NOV</div>
@@ -127,7 +209,7 @@
               </div>
             </a>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-md-4 mb-4">
             <a href="#" class="link">
               <img src="images/blog-2.png" alt="blog 2">
               <div class="section__date section__date--background">20 NOV</div>
@@ -138,7 +220,7 @@
               </div>
             </a>
           </div>
-          <div class="col-4">
+          <div class="col=12 col-md-4 mb-4">
             <a href="#" class="link">
               <img src="images/blog-3.png" alt="blog 3">
               <div class="section__date section__date--background">20 NOV</div>
@@ -158,37 +240,64 @@
         <h2 class="section__title section__title--dark">Contact</h2>
         <p class="section__subtitle section__subtitle--dark">For new projects, ideas, business or anything
           you'd like to discuss, contact with me!</p>
-        <div class="row align-items-center">
-          <div class="col-6">
+        <d iv class="row">
+          <div class="col-12 col-md-6">
             <div class="section section__form">
               <form id="text" action="" method="POST">
-                <textarea name="name" form="text" wrap="off" class="section__form--style">Name</textarea>
-                <textarea name="email" form="text" wrap="off" class="section__form--style">Your email</textarea>
-                <textarea name="phone" form="text" wrap="off" class="section__form--style">Your phone number</textarea>
+                <input type="text" class="section__form--style" value="Name..." name="name">
+                <input type="email" class="section__form--style" value="Your email..." name="email">
+                <input type="phone" class="section__form--style" value="Your phone number..." name="phone">
                 <textarea name="massage" form="text" wrap="off"
                   class="section__form--style section__form--stylebig">Your massage</textarea>
               </form>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-md-6">
             <div class="contacts contacts__title">
               <h6 class="contacts contacts__title--style">ADDRESS</h6>
               <p>123 City name, Street, City, Country</p>
-              <h6 class="title__contacts">EMAIL</h6>
+              <h6 class="contacts__title--style">EMAIL</h6>
               <p>cahee@domain.com</p>
-              <h6 class="title__contacts">PHONE</h6>
+              <h6 class="contacts__title--style">PHONE</h6>
               <p>+012 345 6789</p>
             </div>
           </div>
+      </div>
+      </div>
     </section>
-    <footer div class="footer">
-      <p> © 2015 Company. All right reserved. </p>
-      <img src="images/logo-small.png" alt="logo" class="footer footer__style--logo">
-      <p>Made with <span class="colortext">love</span> by Auskteez</p>
-    </footer>
-    </div>
-    </div>
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="footer__style">
+              <p> © 2015 Company. All right reserved.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="footer__style">
+              <p><img src="images/logo-small.png" alt="logo" class="footer__style--logo"></p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="footer__style">
+              <p>Made with <span class="colortext">love</span> by Auskteez</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+  <script>
+    /* Open when someone clicks on the span element */
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+
+    /* Close when someone clicks on the "x" symbol inside the overlay */
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+  </script>
 </body>
 
 </html>

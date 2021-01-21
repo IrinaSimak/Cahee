@@ -1,0 +1,106 @@
+@media screen and (max-width: 992px) {
+  .nav {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    &__description {
+      text-align: center;
+    }
+
+    &__title {
+      text-align: center;
+
+      &--secondary {
+        margin-top: 25px;
+      }
+    }
+
+    .section__title--services {
+      margin-left: 0%;
+    }
+
+    .section__form--style {
+      margin: 15px 60px 15px 48px;
+    }
+
+    .contacts__title {
+      text-align: center;
+      margin-left: 0%;
+    }
+  }
+
+  .button {
+    &--primary {
+      margin: 30%;
+    }
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .subtitle {
+    text-align: center;
+    width: 100%;
+  }
+
+  .subscribe {
+    &__form {
+      margin-left: 25%;
+    }
+
+    &__button {
+      margin-left: 35%;
+    }
+  }
+
+  .footer {
+    padding: 0px;
+    text-align: center;
+  }
+
+  .link {
+    margin: 20px 0;
+    opacity: 1;
+
+    .section {
+      &__name {
+        bottom: 30px;
+        left: 30px;
+      }
+
+      &__date {
+        top: 60px;
+        left: 60px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .button {
+    &--primary {
+      margin: 30%;
+    }
+  }
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
